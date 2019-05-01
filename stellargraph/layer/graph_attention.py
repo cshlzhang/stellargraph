@@ -555,7 +555,7 @@ class GAT:
             )
 
         X_in = Input(shape=(F,))
-        A_in = Input(shape=(N,), sparse=is_adj_sparse)
+        A_in = Input(shape=(None,), sparse=is_adj_sparse)
 
         x_inp = [X_in, A_in]
 
